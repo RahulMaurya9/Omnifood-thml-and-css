@@ -9,6 +9,7 @@ html{
     color: rgb(189, 187, 187);
     font-family: 'Lato','Arial',sans-serif;
     font-weight: 300;
+    font-size: 20px;
     text-rendering: optimizeLegibility;
 }   
 .row{
@@ -31,6 +32,51 @@ header{
     transform: translate(-50%,-50%);
 }
 h1{
-    font-family: 'Lato';
     margin: 0;
+    color:#fff;
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+                                    /* button detail */                
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    margin-right: 20px;
+    background-color: #d35400;
+    border: 1px solid #d35400;
+    color: #fff;
+}
+
+.btn-hero:link,
+.btn-hero:visited{
+border: 1px solid #d35400;
+color: #d35400;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #ff6a07;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #ff6a07;
+}
+
+.btn-hero:hover,
+.btn-hero:active{
+border: 1px solid #ff6a07;
+color: #fff;
 }
