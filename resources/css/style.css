@@ -31,7 +31,7 @@ section{
 }
 /*------------------------------------------------- HEADER----------------------------------- */
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/resources/css/img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/Omnifood-thml-and-css/resources/css/img/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -113,7 +113,8 @@ h3{
 }
   /*----------------------------------------- BUTTON DETAIL ---------------------------*/                
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -123,7 +124,8 @@ h3{
 }
 
 .btn-ghost:link,
-.btn-ghost:visited{
+.btn-ghost:visited,
+input[type=submit]{
     margin-right: 20px;
     background-color: #d35400;
     border: 1px solid #d35400;
@@ -137,12 +139,15 @@ color: #d35400;
 }
 
 .btn:hover,
-.btn:active{
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
     background-color: #ff6a07;
 }
 
 .btn-ghost:hover,
-.btn-ghost:active{
+.btn-ghost:active,
+input[type=submit]{
     border: 1px solid #ff6a07;
 }
 
@@ -301,7 +306,7 @@ a:active{
 /*  */
 /* -------------------------------------------------------------------------------------------------- */
 .section-testimonial{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url(/resources/css/img/back-customers.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url(/Omnifood-thml-and-css/resources/css/img/back-customers.jpg);
     background-attachment: fixed;
     color: #fff;
     background-size: cover;
@@ -374,9 +379,9 @@ a:active{
     padding: 4px 0;
 }
 .plan-box div:first-child{
-   background-color: #f17f3285;
-   border-top-left-radius: 5px;
-   border-top-right-radius: 5px;
+    background-color: #f17f3285;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .plan-box div:last-child{
     text-align: center;
@@ -385,3 +390,16 @@ a:active{
 /* -------------------------------------------------------------------------------------------------- */
 /*  Contact Form */
 /* -------------------------------------------------------------------------------------------------- */
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
