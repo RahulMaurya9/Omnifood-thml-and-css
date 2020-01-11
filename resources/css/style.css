@@ -403,3 +403,68 @@ textarea{
     border-radius: 3px;
     border: 1px solid #ccc;
 }
+
+/* -------------------------------------------------------------------------------------------------- */
+/* footer */
+/* -------------------------------------------------------------------------------------------------- */
+footer{
+    background-color: #333;
+    padding:20px;
+    font-size: 80%;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+.social-links{
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border:0;
+    color: #888;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited{
+    color:#ddd;
+
+}
+footer p{
+    text-align: center;
+    color: #888;
+}
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 120%;
+}
+#fb:hover{
+    color:#3b5999;
+}
+#li:hover{
+    color: rgb(228,64,95);
+}
+#lg:hover{
+    color: rgb(221,75,57);
+}
+#lt:hover{
+    color:rgb(85,172,238);
+}
+#lt,
+#li,
+#lg,
+#fb{
+    transition: color 0.4s;
+}
